@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/logo.svg">
 </head>
+
 <body>
     <nav>
         <a href="index.html">
-            <svg whidth="200" height="80">
-                <rect x="45" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
-                <rect x="50" y="10" width="50" height="25" rx="5" fill="#81D5E4"></rect>
-                <polygon points="55 45, 95 45,115 62,30 62" fill="#3F6797"></polygon>
-                <polygon points="57 48, 92 48,104 58,43 58" fill="#81D5E4"></polygon>
+            <svg width="200" height="80">
+                <rect class="pantalla-azul" x="45" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
+                <rect class="pantalla-celeste" x="50" y="10" width="50" height="25" rx="5" fill="#81D5E4"></rect>
+                <polygon class="pantalla-azul" points="55 45, 95 45,115 62,30 62" fill="#3F6797"></polygon>
+                <polygon class="pantalla-celeste" points="57 48, 92 48,104 58,43 58" fill="#81D5E4"></polygon>
             </svg>
         </a>
         <ul class="menu">
@@ -27,23 +28,23 @@
     </header>
     <h2>CONTENIDO</h2>
 
-    <main class="cartas">
+    <main class="cont-padre">
         <div class="card">
                     <img class="imagen-card" src="imagenes/img1.jpg">
                     <p class="descripcion-card">Conozcamos un poco sobre la hisoria de la programacion</p>
-                    <a class="botones" href="historia.html">Ir a Historia</a>
+                    <a class="botones-card" href="historia.html">Ir a Historia</a>
         </div>
         <div class="card">    
                 <img class="imagen-card" src="imagenes/img2.jpg">
                 <p class="descripcion-card">Juguemos un poco sobre la computacion</p>
-                <a class="botones" href="juego.html" >Ir a juego</a>
+                <a class="botones-card" href="juego.html" >Ir a juego</a>
         </div>
     </main>
     <footer>
         
         <div class="left">
-            <div class="logo footer">
-                <svg whidth="200" height="80">
+            <div>
+                <svg width="200" height="80">
                     <rect x="45" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
                     <rect x="50" y="10" width="50" height="25" rx="5" fill="#81D5E4"></rect>
                     <polygon points="55 45, 95 45,115 62,30 62" fill="#3F6797"></polygon>
@@ -64,5 +65,7 @@
             </section>
         </div>
     </footer>
+
 </body>
+
 </html>
