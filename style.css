@@ -25,7 +25,7 @@ h1 {
 main {
     padding: 100px 20px;
 }
-/* lo del navegador */
+/* navegador */
 a {
     cursor: pointer;
     text-decoration: underline;
@@ -45,16 +45,16 @@ li {
     list-style-type: none;
 }
 .boton-nav{
-    padding:6px;
-    border-radius:10px;
-    color:#000;
-    background-color:#F0F5E4;
-    box-shadow:3px 3px #154454;
-    cursor:pointer;
-    text-align: center;
-    width: 40%;
-    margin-bottom: 20px;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    padding: 10px;
     text-decoration: none;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+}
+.boton-nav:active {
+    transform: translate(3px, 2px);
 }
 
 /* subtitulos */
@@ -114,33 +114,6 @@ h2 {
     text-decoration: none;
     animation: pulsar 1.5s infinite ;
 }
-
-/* pie de pagina */
-footer {
-    background-color: #1d1d1d;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 40px;
-    color: white;
-}
-
-footer section {
-    float: right;
-}
-
-.left{
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: 60px;
-}
-.titulo-footer{
-    text-align: center;
-    font-size: 14px;
-}
-
 /* pagina de Historia */
 .cont-historia{
     display: flex;
@@ -168,13 +141,46 @@ footer section {
 }
 .video-hist {
     background-color: #000;
+    padding: 5px;
+    width: 70%;
+}
+#pause {
+    background-image: url(/imagenes/pausa.svg);
+}
+.botonesVideo {
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    color:#154454 ;
+    font-weight: 300;
+}
+#pause {
+    background-image: url(/imagenes/pausa.svg);
+}
+.barraVideo {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.botoneraVideo {
+    display: flex;
+    gap: 20px;
+}
+#duracionVideo {
+    padding-top: 28px;
+    padding-right: 10px;
+    color: #eeeeee;
 }
 
 
-/* logo animado */
+/* logo animado nav */
 .pantalla-celeste {
-    animation-name: pantalla-celeste;
-    animation: ease-in 2s;
+    animation: pantalla-celeste ease-in 5s;
+    animation-iteration-count: 1;
 }
 
 @keyframes pantalla-celeste{
@@ -185,7 +191,7 @@ footer section {
     transform: translate(0,-10px);
     opacity:0;}
     30% {
-    transform: translate(0,0);
+    transform: translate(0,-5);
     opacity:1;}
     90% {
     transform: translate(0,0);
@@ -195,12 +201,12 @@ footer section {
     opacity:1;}
 }   
 
-.pantalla-azul{
-    animation-name: pantalla-celeste;
-    animation: ease-in 1.4s;
+.pantalla-azul{ 
+    animation: pantalla-azul ease-in 5s;
+    animation-iteration-count: 1;
 }
 
-@keyframes pantalla-celeste {
+@keyframes pantalla-azul {
     0% {
     transform: translate(0,-10px);
     opacity:0;}
@@ -208,7 +214,7 @@ footer section {
     transform: translate(0,-10px);
     opacity:0;}
     40% {
-    transform: translate(0,0);
+    transform: translate(0,-5);
     opacity:1;}
     90% {
     transform: translate(0,0);
@@ -217,3 +223,51 @@ footer section {
     transform:translate(0,0);
     opacity:1;}
     }  
+
+    
+/* pie de pagina */
+footer {
+    background-color: #1d1d1d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    color: white;
+}
+
+footer section {
+    float: right;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+}
+.titulo-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+/* juego */
+.cajasJuego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cajasSoltar, #cajasSoltar2, #cajasSoltar3 {
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border: 2px solid #1d1d1d;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+#cajaImagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
