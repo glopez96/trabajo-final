@@ -57,7 +57,7 @@ li {
     transform: translate(3px, 2px);
 }
 
-/* subtitulos */
+/* subtitulo */
 h2 {
     font-size: 2.5rem;
     color: #F0F5E4;
@@ -252,7 +252,7 @@ footer section {
 }
 
 /* juego */
-.cajasJuego {
+.juego {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,4 +270,9 @@ footer section {
     flex-direction: row;
     gap: 10px;
     margin: 40px;
+}
+.reinicio {
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
 }

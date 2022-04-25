@@ -12,3 +12,6 @@ botonPause.addEventListener('click',()=> {
     video.pause();
 });
 
+let duracionBloque = document.querySelector('.duracionVideo')
+
+duracionBloque.textContent= `Duracion del video : ${video.duration}`
