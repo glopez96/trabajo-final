@@ -144,9 +144,6 @@ h2 {
     padding: 5px;
     width: 70%;
 }
-#pause {
-    background-image: url(/imagenes/pausa.svg);
-}
 .botonesVideo {
     box-shadow: 2px 3px #154454;
     border-radius: 10px;
@@ -156,9 +153,7 @@ h2 {
     color:#154454 ;
     font-weight: 300;
 }
-#pause {
-    background-image: url(/imagenes/pausa.svg);
-}
+
 .barraVideo {
     background-color: #1d1d1d;
     border-radius: 10px;
@@ -256,8 +251,13 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px;
 }
-#cajasSoltar, #cajasSoltar2, #cajasSoltar3 {
+.cajas{
+    display: flex;
+    flex-direction: row;
+}
+#cajasoltar, #cajasoltar2, #cajasoltar3 {
     width: 300px;
     height: 400px;
     display: inline-block;
@@ -265,11 +265,17 @@ footer section {
     background-color: #2d2d2d;
     text-align: center;
 }
-#cajaImagenes {
-    display: flex;
+#cajasImagenes {
+    display: inline-block;
     flex-direction: row;
     gap: 10px;
     margin: 40px;
+    padding: 100px;
+}
+
+#imagen1, #imagen2, #imagen3 {
+    width: 300px;
+    height: 400px;
 }
 .reinicio {
     display: flex;
